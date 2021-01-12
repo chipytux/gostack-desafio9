@@ -157,7 +157,6 @@ describe('App', () => {
     const response = await request(app).post('/orders').send({
       customer_id: '6a1922c8-af6e-470e-9a34-621cb0643911',
     });
-
     expect(response.status).toEqual(400);
   });
 
